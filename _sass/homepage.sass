@@ -3,17 +3,15 @@
   max-width: 1200px
   margin: auto
   display: flex
-  flex-wrap: wrap
-  border: solid 1px blue
+  flex-direction: column
 .section
   width: 100%
-  position: relative
+  margin: 10px 0
 .row
   background: #efefef
   margin: 15px 0
   display: flex
   flex-wrap: wrap
-  height: 500px
 
 .feature.category-1 .post__thumbnail
   width: 50%
@@ -21,6 +19,11 @@
 
 .feature.category-1 .post__content
   width: 50%
+  background: #ffd400
+  text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: center
 .feature.category-1 .post__thumbnail
   background: blue
   flex-grow: 1
@@ -29,13 +32,6 @@
   height: inherit
   background-size: cover
   background-position: center center
-
-.feature.category-1 .post__content
-  background: #ffd400
-  text-align: center
-  display: flex
-  flex-direction: column
-  justify-content: center
 
 .feature.category-1 .post__content a
   color: black
@@ -54,7 +50,6 @@
 
 .recent.category-1
   background: none
-  border: solid 1px red
   display: flex
   justify-content: space-between
   flex-wrap: wrap
@@ -64,18 +59,20 @@
     background: #efefef
     padding: 10px
 
+@media only screen and (min-width: 1024px)
+  .row
+    height: 600px
 @media only screen and (max-width: 1023px)
   .feature.category-1
-    height: 70vh
   .feature.category-1 .post__thumbnail, .post__content
     width: 100%
   .feature.category-1 .post__content
-    position: relative
     min-height: 150px
     flex-grow: 1
   .feature.category-1 .post__content a
   .feature.category-1 .post__thumbnail
     flex-grow: 1
+    height: 60vh
   .feature.category-1 .post__content .post__title
     font-size: 1.5rem
     line-height: 2rem
