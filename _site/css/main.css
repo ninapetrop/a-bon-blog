@@ -253,13 +253,12 @@ p {
   margin: auto;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  border: solid 1px blue; }
+  -ms-flex-direction: column;
+      flex-direction: column; }
 
 .section {
   width: 100%;
-  position: relative; }
+  margin: 10px 0; }
 
 .row {
   background: #efefef;
@@ -267,15 +266,22 @@ p {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 500px; }
+      flex-wrap: wrap; }
 
 .feature.category-1 .post__thumbnail {
   width: 50%;
   height: inherit; }
 
 .feature.category-1 .post__content {
-  width: 50%; }
+  width: 50%;
+  background: #ffd400;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .feature.category-1 .post__thumbnail {
   background: blue;
@@ -286,16 +292,6 @@ p {
   height: inherit;
   background-size: cover;
   background-position: center center; }
-
-.feature.category-1 .post__content {
-  background: #ffd400;
-  text-align: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center; }
 
 .feature.category-1 .post__content a {
   color: black;
@@ -314,7 +310,6 @@ p {
 
 .recent.category-1 {
   background: none;
-  border: solid 1px red;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -327,19 +322,21 @@ p {
     background: #efefef;
     padding: 10px; }
 
+@media only screen and (min-width: 1024px) {
+  .row {
+    height: 600px; } }
+
 @media only screen and (max-width: 1023px) {
-  .feature.category-1 {
-    height: 70vh; }
   .feature.category-1 .post__thumbnail, .post__content {
     width: 100%; }
   .feature.category-1 .post__content {
-    position: relative;
     min-height: 150px;
     -ms-flex-positive: 1;
         flex-grow: 1; }
   .feature.category-1 .post__thumbnail {
     -ms-flex-positive: 1;
-        flex-grow: 1; }
+        flex-grow: 1;
+    height: 60vh; }
   .feature.category-1 .post__content .post__title {
     font-size: 1.5rem;
     line-height: 2rem; }
