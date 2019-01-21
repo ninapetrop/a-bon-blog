@@ -24,6 +24,7 @@ Next Three Stories, Primary Category
 Return and include " offset:1 "
 -->
 <div class="section">
+  <div class="category-break category__1">Category 1</div>
   <div class="row recent category-1">
     {% for post in site.posts limit:3 offset:1 %}
     <div class="third">
@@ -33,11 +34,27 @@ Return and include " offset:1 "
       <div class="post__content">
         <a href="{{ post.url }}">
           <h1 class="post__title">{{ post.title }}</h1>
-          <p class="post__description">{{ post.description }}</p>
         </a>
       </div>
     </div>
     {% endfor %}
   </div>
 </div>
-<!-- First Story, Secondary Category -->
+<!-- Three Stories, Secondary Category -->
+<div class="section">
+  <div class="category-break category__2">Category 1</div>
+  <div class="row recent category-1">
+    {% for post in site.posts limit:3 %}
+    <div class="third">
+      <a href="#" class="post__thumbnail">
+        <div class="thumbnail" style='background-image: url({{ site.url }}/images/{{ post.thumbnail }})'></div>
+      </a>
+      <div class="post__content">
+        <a href="{{ post.url }}">
+          <h1 class="post__title">{{ post.title }}</h1>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

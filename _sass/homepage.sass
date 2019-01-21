@@ -8,15 +8,28 @@
   width: 100%
   margin: 10px 0
 .row
-  background: #efefef
+  background: white
   margin: 15px 0
   display: flex
   flex-wrap: wrap
-
+.category-break
+  width: 250px
+  margin: auto
+  position: relative
+  top: 30px
+  text-align: center
+  padding: 10px
+  border-radius: 2px
+  font-family: $font-hind
+  font-weight: 700
+  text-transform: uppercase
+.category__1
+  background: #ffd400
+.category__2
+  background: #fc6a87
 .feature.category-1 .post__thumbnail
   width: 50%
   height: inherit
-
 .feature.category-1 .post__content
   width: 50%
   background: #ffd400
@@ -27,49 +40,57 @@
 .feature.category-1 .post__thumbnail
   background: blue
   flex-grow: 1
-
 .feature.category-1 .post__thumbnail .thumbnail
   height: inherit
   background-size: cover
   background-position: center center
-
 .feature.category-1 .post__content a
   color: black
   text-decoration: none
-
 .feature.category-1 .post__content .post__description
   font-size: 1.2rem
   font-family: $font-hind
   font-weight: 600
   max-width: 400px
   margin: auto
-
 .feature.category-1 .post__content .post__title
   font-size: 3.5rem
   line-height: 4.2rem
-
 .recent.category-1
   background: none
   display: flex
   justify-content: space-between
   flex-wrap: wrap
   .third
-    max-width: 380px
     width: 100%
-    background: #efefef
-    padding: 10px
-
+    background: white
+    .post__content
+      height: 30%
+      padding: 10px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-content: center
+      a
+        text-decoration: none
+      .post__title
+        font-size: 1.5rem
+        color: black
+.third .post__thumbnail .thumbnail
+  height: 70%
+  background-size: cover
+  background-position: center center
 @media only screen and (min-width: 1024px)
   .row
     height: 600px
+  .third
+    max-width: 32%
 @media only screen and (max-width: 1023px)
-  .feature.category-1
   .feature.category-1 .post__thumbnail, .post__content
     width: 100%
   .feature.category-1 .post__content
     min-height: 150px
     flex-grow: 1
-  .feature.category-1 .post__content a
   .feature.category-1 .post__thumbnail
     flex-grow: 1
     height: 60vh
@@ -79,3 +100,12 @@
   .feature.category-1 .post__content .post__description
     font-size: 1rem
     line-height: 1.5rem
+  .third
+    width: 100%
+    height: 500px
+    .post__thumbnail
+      flex-grow: 1
+      height: 50vh
+    .post__content
+      min-height: 150px
+      flex-grow: 1

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Another Article"
+title:  "A Longer Title For Now, Though We'll Have to Figure Our Character Limit"
 date:   2019-01-20 09:11:03
 description: wors words words.
 thumbnail: avocado-toast.jpg

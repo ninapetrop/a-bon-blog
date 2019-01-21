@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Final Article"
+title:  "Good Morning, Julia! It's me, Joe. Just wanted to tell you how beautiful you are"
 date:   2019-01-20 09:11:03
 description: wors words words.
 thumbnail: avocado-toast.jpg
