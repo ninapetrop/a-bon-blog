@@ -401,3 +401,55 @@ p {
   background: black;
   color: white;
   text-align: center; }
+
+.menu__container {
+  background: white;
+  height: 100vh;
+  width: 350px;
+  position: fixed;
+  z-index: 9000;
+  font-family: Hind, sans-serif;
+  transition: 0.5s ease all;
+  left: -100vw; }
+  .menu__container #close__button {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 18px;
+    color: black;
+    position: absolute;
+    left: 15px;
+    top: 10px; }
+  .menu__container .menu__header {
+    height: 50px;
+    padding: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    font-weight: 600;
+    font-size: 1.2rem; }
+  .menu__container .menu__header:nth-of-type(2) {
+    background: black;
+    color: white; }
+  .menu__container ul li a {
+    height: 60px;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0.15em; }
+    .menu__container ul li a:hover {
+      background: #ffd400; }
+
+.menu__container.open {
+  left: 0; }

@@ -8,17 +8,31 @@
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
-
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
     </head>
     <body>
 
         <div class="site">
           <div class="header">
             <div class="nav">
-                <div class="icon"></div>
+                <div class="icon toggle__btn" aria-hidden="true"></div>
             </div>
             <h1 class="title"><a href="/">A Bon Blog</a></h1>
             <a class="extra" href="/">home</a>
+          </div>
+          <div class="menu__container">
+            <div class="toggle__btn" id="close__button" aria-hidden="true">X</div>
+            <div class="menu__header">A Bon Blog</div>
+            <div class="menu__header">Second Header</div>
+            <ul>
+              <li><a href="#">Recipes</a></li>
+              <li><a href="#">Cocktails</a></li>
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">Reviews</a></li>
+            </ul>
           </div>
           <div class="content-wrap">
 
@@ -142,6 +156,6 @@ Return and include " offset:1 "
             </div>
           </div>
         </div>
-
+        <script src="/js/main.js"></script>
     </body>
 </html>
