@@ -5,20 +5,42 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>A Bon Blog</title>
         <meta name="viewport" content="width=device-width">
-
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
-
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
     </head>
     <body>
 
         <div class="site">
           <div class="header">
             <div class="nav">
-                <div class="icon"></div>
+                <i class="fas fa-bars icon toggle__btn" aria-hidden="true"></i>
             </div>
             <h1 class="title"><a href="/">A Bon Blog</a></h1>
-            <a class="extra" href="/">home</a>
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="menu__container">
+            <i class="fas fa-times toggle__btn" id="close__button" aria-hidden="true"></i>
+            <div class="menu__header">A Bon Blog</div>
+            <div class="menu__header">Second Header</div>
+            <ul>
+              <li><a href="#">Recipes</a></li>
+              <li><a href="#">Cocktails</a></li>
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">Reviews</a></li>
+            </ul>
+            <div class="menu__footer">
+              <div class="social__wrap">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-youtube"></i>
+              </div>
+            </div>
           </div>
           <div class="content-wrap">
 
@@ -43,6 +65,7 @@ Next Three Stories, Primary Category
 Return and include " offset:1 "
 -->
 <div class="section">
+  <div class="category-break category__1">Category 1</div>
   <div class="row recent category-1">
     
     <div class="third">
@@ -51,8 +74,7 @@ Return and include " offset:1 "
       </a>
       <div class="post__content">
         <a href="/jekyll/update/2019/01/20/final-article.html">
-          <h1 class="post__title">Final Article</h1>
-          <p class="post__description">wors words words.</p>
+          <h1 class="post__title">Good Morning, Julia! It's me, Joe. Just wanted to tell you how beautiful you are</h1>
         </a>
       </div>
     </div>
@@ -63,8 +85,7 @@ Return and include " offset:1 "
       </a>
       <div class="post__content">
         <a href="/jekyll/update/2019/01/20/another-article.html">
-          <h1 class="post__title">Another Article</h1>
-          <p class="post__description">wors words words.</p>
+          <h1 class="post__title">A Longer Title For Now, Though We'll Have to Figure Our Character Limit</h1>
         </a>
       </div>
     </div>
@@ -75,34 +96,74 @@ Return and include " offset:1 "
       </a>
       <div class="post__content">
         <a href="/jekyll/update/2014/04/20/welcome-to-jekyll.html">
-          <h1 class="post__title">Welcome to Jekyll!</h1>
-          <p class="post__description">wors words words.</p>
+          <h1 class="post__title">Been Forever Since I Built Anything. This Year, I'm Going to do so Much More</h1>
         </a>
       </div>
     </div>
     
   </div>
 </div>
-<!-- First Story, Secondary Category -->
+<!-- Three Stories, Secondary Category -->
+<div class="section">
+  <div class="category-break category__2">Category 1</div>
+  <div class="row recent category-1">
+    
+    <div class="third">
+      <a href="#" class="post__thumbnail">
+        <div class="thumbnail" style='background-image: url(/images/avocado-toast.jpg)'></div>
+      </a>
+      <div class="post__content">
+        <a href="/jekyll/update/2019/01/20/food-food.html">
+          <h1 class="post__title">Pantie dropping, bone popping, honey dijon chicken.</h1>
+        </a>
+      </div>
+    </div>
+    
+    <div class="third">
+      <a href="#" class="post__thumbnail">
+        <div class="thumbnail" style='background-image: url(/images/avocado-toast.jpg)'></div>
+      </a>
+      <div class="post__content">
+        <a href="/jekyll/update/2019/01/20/final-article.html">
+          <h1 class="post__title">Good Morning, Julia! It's me, Joe. Just wanted to tell you how beautiful you are</h1>
+        </a>
+      </div>
+    </div>
+    
+    <div class="third">
+      <a href="#" class="post__thumbnail">
+        <div class="thumbnail" style='background-image: url(/images/avocado-toast.jpg)'></div>
+      </a>
+      <div class="post__content">
+        <a href="/jekyll/update/2019/01/20/another-article.html">
+          <h1 class="post__title">A Longer Title For Now, Though We'll Have to Figure Our Character Limit</h1>
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</div>
 
 
           </div>
           <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name is<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
+            <div class="content-wrap">
+              <div class="contact">
+                <p>
+                  Your Name is<br />
+                  What You Are<br />
+                  you@example.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="https://github.com/yourusername">github.com/yourusername</a><br />
+                  <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+                </p>
+              </div>
             </div>
           </div>
         </div>
-
+        <script src="/js/main.js"></script>
     </body>
 </html>

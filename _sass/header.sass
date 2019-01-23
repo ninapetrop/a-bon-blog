@@ -1,7 +1,7 @@
 .header
   background: black
   color: white
-  height: 50px
+  height: 60px
   width: 100%
   padding: 10px
   box-sizing: border-box
@@ -10,6 +10,8 @@
   align-items: center
   position: fixed
   z-index: 2000
+  *
+    font-size: 20px
 
 .header a
   color: white
@@ -17,11 +19,13 @@
   font-weight: 300
 
 .header .nav
-  height: inherit
+  height: 100%
   width: 50px
+  display: flex
+  justify-content: center
+  align-items: center
 
 .header .nav .icon
-  background: white
-  margin: 5px auto
-  width: 45px;
-  height: 40px;
+  font-size: 20px
+.header .fa-search
+  width: 50px
