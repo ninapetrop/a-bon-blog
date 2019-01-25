@@ -15,8 +15,13 @@
 html, body {
   height: 100%; }
 
-body {
-  background: #f5f5f5; }
+.main {
+  background: #f5f5f5;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding-top: 50px; }
 
 .highlight {
   background: #ffffff; }
@@ -214,7 +219,7 @@ body {
   color: #009999; }
 
 .header {
-  background: black;
+  background: #0D1321;
   color: white;
   height: 60px;
   width: 100%;
@@ -258,18 +263,9 @@ h1 {
 p {
   font-family: Crimson Text, serif; }
 
-.content-wrap {
-  padding: 50px 0;
-  max-width: 1200px;
-  margin: auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
 .section {
-  width: 100%;
-  margin: 10px 0; }
+  max-width: 1200px;
+  margin: 10px auto; }
 
 .row {
   background: white;
@@ -292,7 +288,7 @@ p {
   text-transform: uppercase; }
 
 .category__1 {
-  background: #ffd400; }
+  background: #FFC700; }
 
 .category__2 {
   background: #fc6a87; }
@@ -303,7 +299,7 @@ p {
 
 .feature.category-1 .post__content {
   width: 50%;
-  background: #ffd400;
+  background: #FFC700;
   text-align: center;
   display: -ms-flexbox;
   display: flex;
@@ -406,9 +402,14 @@ p {
           flex-grow: 1; } }
 
 .footer {
-  background: white;
+  background: #E5E9EC;
   color: black;
-  text-align: center; }
+  text-align: center;
+  padding: 50px; }
+  .footer p {
+    font-family: Hind, sans-serif;
+    font-weight: 300;
+    font-size: 1.12rem; }
 
 .menu__container {
   background: #f5f5f5;
@@ -439,7 +440,7 @@ p {
     font-weight: 600;
     font-size: 1.2rem; }
   .menu__container .menu__header:nth-of-type(2) {
-    background: black;
+    background: #0D1321;
     color: white; }
   .menu__container ul li a {
     height: 60px;
@@ -454,11 +455,11 @@ p {
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
-    color: black;
+    color: #0D1321;
     letter-spacing: 0.15em;
     background: white; }
     .menu__container ul li a:hover {
-      background: #ffd400; }
+      background: #FFC700; }
   .menu__container .menu__footer {
     background: #f5f5f5;
     -ms-flex-positive: 1;
@@ -485,15 +486,17 @@ p {
     width: 100vw; } }
 
 .post__header {
-  text-align: center; }
+  text-align: center;
+  background: white;
+  padding: 50px 0; }
   .post__header .post__title {
     font-family: Hind, sans-serif;
-    font-size: 3.8rem;
+    font-size: 3.57rem;
     max-width: 850px;
     margin: auto; }
   .post__header .description {
     font-family: Hind, sans-serif;
-    font-size: 1.2em;
+    font-size: 1.1rem;
     font-weight: 600;
     max-width: 450px;
     margin: 20px auto; }
@@ -504,10 +507,50 @@ p {
   background-size: cover;
   background-position: center; }
 
-.post__header, .post__body {
-  background: white;
-  padding: 10px; }
-
-.post__body .wrap {
-  max-width: 850px;
-  margin: auto; }
+.post__body {
+  background: white; }
+  .post__body .wrap {
+    max-width: 710px;
+    margin: auto;
+    font-size: 1.4rem; }
+    .post__body .wrap .ingredients__container {
+      background: #f5f5f5;
+      padding: 20px 50px;
+      margin: 2.14rem 0; }
+      .post__body .wrap .ingredients__container p {
+        font-family: Hind, sans-serif;
+        text-transform: uppercase;
+        font-size: 1.14em;
+        font-weight: 600;
+        letter-spacing: 2px;
+        max-width: 357px;
+        margin: 0 auto 1em auto; }
+      .post__body .wrap .ingredients__container ul {
+        list-style: none;
+        max-width: 357px;
+        margin: auto; }
+        .post__body .wrap .ingredients__container ul li {
+          padding-bottom: .3em; }
+      .post__body .wrap .ingredients__container ul li {
+        font-family: Hind, sans-serif;
+        font-size: 1.14em;
+        font-weight: 400; }
+    .post__body .wrap p {
+      font-size: 1.428rem;
+      margin-bottom: 2.14rem;
+      font-weight: 400; }
+    .post__body .wrap h2 {
+      border-top: solid 5px black;
+      padding: 2.14rem 0;
+      font-family: Hind, sans-serif;
+      text-transform: uppercase;
+      font-size: 1.14rem;
+      font-weight: 600;
+      letter-spacing: 2px; }
+    .post__body .wrap h3 {
+      padding: 1.28rem 0;
+      font-family: Hind, sans-serif;
+      text-transform: uppercase;
+      font-size: 1.14rem;
+      font-weight: 600;
+      letter-spacing: 2px; }

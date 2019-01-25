@@ -6,21 +6,41 @@ description: Grow a pair in 2019 and start eating GMO chicken. Cheaper than your
 thumbnail: avocado-toast.jpg
 categories: jekyll update
 ---
+<div class="ingredients__container">
+  <p>Ingredients</p>
+  <ul>
+    <li>2 Tbsp. extra-virgin olive oil</li>
+    <li>1 lb. sweet or hot Italian sausage, casings removed</li>
+    <li>5 garlic cloves, 3 thinly sliced, 2 finely grated</li>
+    <li>1/2 tsp. dried oregano</li>
+    <li>1/4 tsp. crushed red pepper flakes (optional)</li>
+  </ul>
+</div>
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+## Overview
 
-Jekyll also offers powerful support for code snippets:
+You'll find this post in your directory - edit this post and re-build (or run with the switch) to see your changes!
+To add new posts, simply add a file in the directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+You'll find this post in your directory - edit this post and re-build (or run with the switch) to see your changes!
+To add new posts, simply add a file in the directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+You'll find this post in your directory - edit this post and re-build (or run with the switch) to see your changes!
+To add new posts, simply add a file in the directory that follows the convention: YYYY-MM-DD-name-of-post.ext.You'll find this post in your directory - edit this post and re-build (or run with the switch) to see your changes!
+To add new posts, simply add a file in the directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
 
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+You'll find this post in your directory - edit this post and re-build (or run with the switch) to see your changes!
+To add new posts, simply add a file in the directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+
+### This is what a h3 looks like
+
+You'll find this post in your directory - edit this post and re-build (or run with the switch) to see your changes!
+To add new posts, simply add a file in the directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+
+### This is what a h3 looks like
+
+You'll find this post in your directory - edit this post and re-build (or run with the switch) to see your changes!
+To add new posts, simply add a file in the directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+
+You'll find this post in your directory - edit this post and re-build (or run with the switch) to see your changes!
+To add new posts, simply add a file in the directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
