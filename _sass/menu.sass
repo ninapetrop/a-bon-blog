@@ -7,6 +7,8 @@
   font-family: $font-hind
   transition: 0.5s ease all;
   left: -100vw
+  display: flex
+  flex-direction: column
   #close__button
     text-decoration: none
     font-size: 20px
@@ -17,6 +19,7 @@
   .menu__header
     background: white
     height: 60px
+    min-height: 60px
     padding: 10px
     display: flex
     justify-content: center
@@ -26,6 +29,9 @@
   .menu__header:nth-of-type(2)
     background: #0D1321
     color: white
+  ul
+    flex-grow: 1
+    background: white
   ul li a
     height: 60px
     text-align: center
@@ -43,8 +49,9 @@
       background: #FFC700
   .menu__footer
     background: #f5f5f5
-    flex-grow: 1
     max-height: 50%
+    height: 100%
+    bottom: 0
     .social__wrap
       max-width: 300px
       margin: auto
