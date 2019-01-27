@@ -3,7 +3,7 @@ layout: post
 title:  "Been Forever Since I Built Anything. This Year, I'm Going to do so Much More"
 date:   2014-04-20 09:11:03
 description: wors words words.
-thumbnail: avocado-toast.jpg
+thumbnail: beef-bread-burger-156114.jpg
 categories: jekyll update
 ---
 
