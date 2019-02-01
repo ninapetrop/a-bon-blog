@@ -60,8 +60,7 @@
       background: #FFC700
   .menu__footer
     background: #E5E9EC
-    max-height: 50%
-    height: 100%
+    flex-grow: 2
     bottom: 0
     // social stypes, inherit from main
     .social__wrap
@@ -71,8 +70,10 @@
       justify-content: space-around
       align-items: center
       height: 80px
-      i
+      a
+        color: inherit
         font-size: 20px
+
 .menu__container.open
   left: 0
 @media only screen and (max-width: 768px)
