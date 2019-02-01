@@ -486,10 +486,15 @@ p {
     -ms-flex-align: center;
         align-items: center;
     font-weight: 500;
-    font-size: 1.28rem; }
+    font-size: 1.28rem;
+    border-bottom: solid 1px #E5E9EC; }
+    .menu__container .menu__header a {
+      color: inherit;
+      text-decoration: none; }
   .menu__container .menu__header:nth-of-type(2) {
     background: #0D1321;
-    color: white; }
+    color: white;
+    display: none; }
   .menu__container ul {
     -ms-flex-positive: 1;
         flex-grow: 1;

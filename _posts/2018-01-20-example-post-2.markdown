@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  The world is your oyster. Blog about that. (C2)
+title:  A Jekyll theme inspired by a recipe site (C2)
 date:   2019-01-20 09:11:03
 description: Check out any of these posts for examples of typography and post layouts
 thumbnail: avocado-toast.jpg

@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "A Longer Title For Now, Though We'll Have to Figure Our Character Limit"
+title:  A Longer Title For Now, Though We'll Have to Figure Our Character Limit (C2)
 date:   2019-01-20 09:11:03
 description: wors words words.
 thumbnail: alcoholic-beverage-beverage-citrus-1232152.jpg
-categories: jekyll update
+categories: category2
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

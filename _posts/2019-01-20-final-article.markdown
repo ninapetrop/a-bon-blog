@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Good Morning, Julia! It's me, Joe. Just wanted to tell you how beautiful you are"
+title:  Good Morning, Julia! It's me, Joe. Just wanted to tell you how beautiful you are (C1)
 date:   2019-01-20 09:11:03
 description: wors words words.
 thumbnail: dessert-donuts-doughnuts-273773.jpg
-categories: jekyll update
+categories: category1
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

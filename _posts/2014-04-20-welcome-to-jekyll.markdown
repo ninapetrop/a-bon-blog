@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Been Forever Since I Built Anything. This Year, I'm Going to do so Much More"
+title:  "Use this to blog about whatever you want (C1)"
 date:   2014-04-20 09:11:03
 description: wors words words.
 thumbnail: beef-bread-burger-156114.jpg
-categories: jekyll update
+categories: category1
 ---
 
 You'll find this post in your directory - edit this post and re-build (or run with the switch) to see your changes!

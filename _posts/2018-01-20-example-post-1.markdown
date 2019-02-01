@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  The world is your oyster. Blog about that. (C2)
+title:  Built using Gulp, Sass, and BrowserSync (C1)
 date:   2019-01-20 09:11:03
 description: Check out any of these posts for examples of typography and post layouts
 thumbnail: avocado-toast.jpg
-categories: category2
+categories: category1
 ---
 <div class="ingredients__container">
   <p>Ingredients</p>
