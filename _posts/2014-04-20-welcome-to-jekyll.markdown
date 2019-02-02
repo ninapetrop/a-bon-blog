@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Been Forever Since I Built Anything. This Year, I'm Going to do so Much More"
+title:  Lo-fi banjo aesthetic selfies retro lomo sustainable 90's tofu
 date:   2014-04-20 09:11:03
-description: wors words words.
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 thumbnail: beef-bread-burger-156114.jpg
-categories: jekyll update
+categories: category1
 ---
 
 You'll find this post in your directory - edit this post and re-build (or run with the switch) to see your changes!

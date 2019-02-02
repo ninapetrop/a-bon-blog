@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Good Morning, Julia! It's me, Joe. Just wanted to tell you how beautiful you are"
+title:  Neutra kitsch cray, pop-up godard tilde meditation truffaut iPhone plaid chartreuse 
 date:   2019-01-20 09:11:03
-description: wors words words.
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 thumbnail: dessert-donuts-doughnuts-273773.jpg
-categories: jekyll update
+categories: category1
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

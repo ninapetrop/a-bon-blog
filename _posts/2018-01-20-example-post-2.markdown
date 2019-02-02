@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Vegan direct trade williamsburg kogi food truck vice
+title:  Echo park drinking vinegar letterpress locavore waistcoat kale chips
 date:   2019-01-20 09:11:03
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 thumbnail: avocado-toast.jpg

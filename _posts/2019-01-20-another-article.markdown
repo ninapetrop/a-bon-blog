@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "A Longer Title For Now, Though We'll Have to Figure Our Character Limit"
+title:  Williamsburg gastropub cliche, thundercats gluten-free la croix ramps viral mixtape
 date:   2019-01-20 09:11:03
-description: wors words words.
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 thumbnail: alcoholic-beverage-beverage-citrus-1232152.jpg
-categories: jekyll update
+categories: category2
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  Vegan direct trade williamsburg kogi food truck vice
+title:  Viral poke mlkshk, green juice vegan XOXO banjo vinyl meh
 date:   2019-01-20 09:11:03
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 thumbnail: avocado-toast.jpg
-categories: category2
+categories: category1
 ---
 <div class="ingredients__container">
   <p>Ingredients</p>

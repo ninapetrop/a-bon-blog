@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="post__header">
+  <h2 class="post__title">{{ page.tag }}</h2>
+</div>
+<div class="category__body">
+  <div class="wrap">
+    {% for post in site.categories[page.tag] %}
+      <div class="result">
+        <p class="meta">{{ post.date | date_to_string }}</p>
+        <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+        <p class="post__description">{{ post.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>

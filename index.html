@@ -26,7 +26,7 @@ Return and include " offset:1 "
 <div class="section">
   <div class="category-break category__1">Category 1</div>
   <div class="row recent category-1">
-    {% for post in site.posts limit:3 offset:1 %}
+    {% for post in site.categories.category1 limit:3 %}
     <div class="third">
       <a href="#" class="post__thumbnail">
         <div class="thumbnail" style='background-image: url({{ site.url }}/images/{{ post.thumbnail }})'></div>
@@ -42,9 +42,9 @@ Return and include " offset:1 "
 </div>
 <!-- Three Stories, Secondary Category -->
 <div class="section">
-  <div class="category-break category__2">Category 1</div>
+  <div class="category-break category__2">Category 2</div>
   <div class="row recent category-2">
-    {% for post in site.posts limit:3 %}
+    {% for post in site.categories.category2 limit:3 %}
     <div class="third">
       <a href="#" class="post__thumbnail">
         <div class="thumbnail" style='background-image: url({{ site.url }}/images/{{ post.thumbnail }})'></div>
