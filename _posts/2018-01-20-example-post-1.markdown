@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  Built using Gulp, Sass, and BrowserSync (C1)
+title:  Viral poke mlkshk, green juice vegan XOXO banjo vinyl meh
 date:   2019-01-20 09:11:03
-description: Check out any of these posts for examples of typography and post layouts
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 thumbnail: avocado-toast.jpg
 categories: category1
 ---

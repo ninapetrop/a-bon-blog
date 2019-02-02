@@ -22,7 +22,7 @@
   width: inherit
   background-size: cover
   background-position: center
-.post__body
+.post__body, .category__body
   background: white
   .wrap
     padding: 25px 15px
@@ -77,3 +77,20 @@
       font-size: 1.14em
       font-weight: 600
       letter-spacing: 1px
+
+.category__body .wrap
+  .result
+    a
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+    h3
+      margin: 0
+      padding: 0
+      text-transform: none
+    p.meta
+      font-size: .8em
+      margin: 0
+      font-family: $font-hind
+    p.post__description
+      font-size: 1em

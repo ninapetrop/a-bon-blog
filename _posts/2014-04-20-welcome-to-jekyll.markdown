@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Use this to blog about whatever you want (C1)"
+title:  Lo-fi banjo aesthetic selfies retro lomo sustainable 90's tofu
 date:   2014-04-20 09:11:03
-description: wors words words.
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 thumbnail: beef-bread-burger-156114.jpg
 categories: category1
 ---
