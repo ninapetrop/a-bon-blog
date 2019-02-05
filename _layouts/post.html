@@ -9,6 +9,14 @@ layout: default
 <div class="post__image" style='background-image: url({{ site.url }}/images/{{ page.thumbnail }})'></div>
 <div class="post__body">
   <div class="wrap">
+    <div class="ingredients__container">
+      <p class="list__title">Ingredients</p>
+      <ul>
+        {% for item in page.ingredients %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
     {{ content }}
   </div>
 </div>
