@@ -13,3 +13,67 @@ h1
 
 p
   font-family: $font-crimson
+
+
+// Post Styles
+.post__header .post__title
+  font-size: 3.57em
+  font-family: $font-hind
+
+.post__header .description
+  font-family: $font-hind
+  font-size: 1.24em
+  font-weight: 600
+
+.post__header .meta
+  font-size: 1.12em
+  font-family: $font-hind
+
+.post__body .wrap
+  font-size: 1.4em
+  .ingredients__container
+    .list__title, ul li
+      font-family: $font-hind
+    .list__title
+      font-size: 1.14em
+      text-transform: uppercase
+      font-weight: 600
+      letter-spacing: 2px
+    ul li
+      font-weight: 400
+  h2:first-of-type
+    border-top: solid 5px black
+  h2
+    padding: 2.14rem 0
+    font-family: $font-hind
+    text-transform: uppercase
+    font-size: 1.14em
+    font-weight: 600
+    letter-spacing: 1px
+  h3
+    padding: 1.98em 0
+    font-family: $font-hind
+    text-transform: uppercase
+    font-size: 1.06em
+    font-weight: 600
+    letter-spacing: 1px
+  p
+    font-size: 1.12em
+    font-weight: 400
+    margin-bottom: 1.14em
+  a
+    font-weight: 600
+    color: inherit
+    &:hover
+      background: #FFC700
+  p code
+    // Since I didn't intent to use this theme for coding things, I'm applying settings to the code elements that aren't ideal. If you plan to use this for code, you may want to reivse this section
+    font-size: inherit
+    font-family: $font-crimson
+    background: #efefef
+  ul, ol
+    margin-bottom: 1.14em
+    li
+      margin: .4em 0
+      li
+        margin-left: 1em

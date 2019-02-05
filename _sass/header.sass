@@ -3,7 +3,6 @@
   color: white
   height: 60px
   width: 100%
-  padding: 10px
   box-sizing: border-box
   display: flex
   justify-content: space-between
@@ -16,6 +15,7 @@
   text-decoration: none
   font-weight: 300
   font-size: 20px
+  cursor: pointer
 
 .header .nav
   height: 100%
@@ -23,7 +23,11 @@
   display: flex
   justify-content: center
   align-items: center
+  &:hover
+    cursor: pointer
+    background: rgba(255,255,255,0.1)
 
 .header .nav .icon
+  cursor: pointer
 .header .fa-search
   width: 50px

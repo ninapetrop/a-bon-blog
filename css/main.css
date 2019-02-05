@@ -22,6 +22,78 @@ html, body {
       flex-direction: column;
   padding-top: 50px; }
 
+body {
+  font-size: 14px; }
+  @media only screen and (max-width: 1024px) {
+    body {
+      font-size: 12px; } }
+
+h1 {
+  font-family: Hind, sans-serif; }
+
+p {
+  font-family: Crimson Text, serif; }
+
+.post__header .post__title {
+  font-size: 3.57em;
+  font-family: Hind, sans-serif; }
+
+.post__header .description {
+  font-family: Hind, sans-serif;
+  font-size: 1.24em;
+  font-weight: 600; }
+
+.post__header .meta {
+  font-size: 1.12em;
+  font-family: Hind, sans-serif; }
+
+.post__body .wrap {
+  font-size: 1.4em; }
+  .post__body .wrap .ingredients__container .list__title, .post__body .wrap .ingredients__container ul li {
+    font-family: Hind, sans-serif; }
+  .post__body .wrap .ingredients__container .list__title {
+    font-size: 1.14em;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px; }
+  .post__body .wrap .ingredients__container ul li {
+    font-weight: 400; }
+  .post__body .wrap h2:first-of-type {
+    border-top: solid 5px black; }
+  .post__body .wrap h2 {
+    padding: 2.14rem 0;
+    font-family: Hind, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.14em;
+    font-weight: 600;
+    letter-spacing: 1px; }
+  .post__body .wrap h3 {
+    padding: 1.98em 0;
+    font-family: Hind, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.06em;
+    font-weight: 600;
+    letter-spacing: 1px; }
+  .post__body .wrap p {
+    font-size: 1.12em;
+    font-weight: 400;
+    margin-bottom: 1.14em; }
+  .post__body .wrap a {
+    font-weight: 600;
+    color: inherit; }
+    .post__body .wrap a:hover {
+      background: #FFC700; }
+  .post__body .wrap p code {
+    font-size: inherit;
+    font-family: Crimson Text, serif;
+    background: #efefef; }
+  .post__body .wrap ul, .post__body .wrap ol {
+    margin-bottom: 1.14em; }
+    .post__body .wrap ul li, .post__body .wrap ol li {
+      margin: .4em 0; }
+      .post__body .wrap ul li li, .post__body .wrap ol li li {
+        margin-left: 1em; }
+
 .highlight {
   background: #ffffff; }
 
@@ -222,7 +294,6 @@ html, body {
   color: white;
   height: 60px;
   width: 100%;
-  padding: 10px;
   box-sizing: border-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,7 +308,8 @@ html, body {
   color: white;
   text-decoration: none;
   font-weight: 300;
-  font-size: 20px; }
+  font-size: 20px;
+  cursor: pointer; }
 
 .header .nav {
   height: 100%;
@@ -248,21 +320,15 @@ html, body {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
+  .header .nav:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1); }
+
+.header .nav .icon {
+  cursor: pointer; }
 
 .header .fa-search {
   width: 50px; }
-
-body {
-  font-size: 14px; }
-  @media only screen and (max-width: 1024px) {
-    body {
-      font-size: 12px; } }
-
-h1 {
-  font-family: Hind, sans-serif; }
-
-p {
-  font-family: Crimson Text, serif; }
 
 .section {
   max-width: 1200px;
@@ -473,7 +539,8 @@ p {
     color: black;
     position: absolute;
     left: 25px;
-    top: 20px; }
+    top: 20px;
+    cursor: pointer; }
   .menu__container .menu__header {
     background: white;
     height: 60px;
@@ -554,19 +621,11 @@ p {
   background: white;
   padding: 50px 15px; }
   .post__header .post__title {
-    font-family: Hind, sans-serif;
-    font-size: 3.57em;
     max-width: 850px;
     margin: auto; }
   .post__header .description {
-    font-family: Hind, sans-serif;
-    font-size: 1.24em;
-    font-weight: 600;
     max-width: 450px;
     margin: 20px auto; }
-  .post__header .meta {
-    font-size: 1.12em;
-    font-family: Hind, sans-serif; }
 
 .post__image {
   height: 100vh;
@@ -579,55 +638,22 @@ p {
   .post__body .wrap, .category__body .wrap {
     padding: 25px 15px;
     max-width: 710px;
-    margin: auto;
-    font-size: 1.4em; }
+    margin: auto; }
     .post__body .wrap .ingredients__container, .category__body .wrap .ingredients__container {
       background: #f5f5f5;
       padding: 20px 50px;
-      margin: 2.14rem 0;
-      font-family: Hind, sans-serif; }
-      .post__body .wrap .ingredients__container p, .category__body .wrap .ingredients__container p {
-        text-transform: uppercase;
-        font-weight: 600;
-        letter-spacing: 2px;
+      margin: 2.14rem 0; }
+      .post__body .wrap .ingredients__container .list__title, .category__body .wrap .ingredients__container .list__title {
         max-width: 420px;
-        margin: 0 auto 1em auto;
-        font-family: Hind, sans-serif;
-        font-size: 1.14em; }
+        margin: 0 auto 1em auto; }
       .post__body .wrap .ingredients__container ul, .category__body .wrap .ingredients__container ul {
         list-style: none;
         max-width: 420px;
         margin: auto; }
         .post__body .wrap .ingredients__container ul li, .category__body .wrap .ingredients__container ul li {
           padding-bottom: .3em; }
-      .post__body .wrap .ingredients__container ul li, .category__body .wrap .ingredients__container ul li {
-        font-weight: 400; }
-    .post__body .wrap p, .category__body .wrap p {
-      font-size: 1.12em;
-      margin-bottom: 2.14em;
-      font-weight: 400; }
-    .post__body .wrap a, .category__body .wrap a {
-      font-weight: 600;
-      color: inherit; }
-      .post__body .wrap a:hover, .category__body .wrap a:hover {
-        background: #FFC700; }
-      .post__body .wrap a span, .category__body .wrap a span {
-        margin-left: 15px; }
-    .post__body .wrap h2, .category__body .wrap h2 {
-      border-top: solid 5px black;
-      padding: 2.14rem 0;
-      font-family: Hind, sans-serif;
-      text-transform: uppercase;
-      font-size: 1.14em;
-      font-weight: 600;
-      letter-spacing: 1px; }
-    .post__body .wrap h3, .category__body .wrap h3 {
-      padding: 2.14em 0;
-      font-family: Hind, sans-serif;
-      text-transform: uppercase;
-      font-size: 1.14em;
-      font-weight: 600;
-      letter-spacing: 1px; }
+    .post__body .wrap a span, .category__body .wrap a span {
+      margin-left: 15px; }
 
 .category__body .wrap .result a {
   text-decoration: none; }
