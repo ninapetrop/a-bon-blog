@@ -16,7 +16,7 @@ ingredients:
 
 ## Overview (h2)
 
-This is what a post looks like in this theme. There are call outboxes you can put at the top. This theme was inspired by a recipe site, but you can probably think of a way to incorporate these detail boxes into a variety of genres. If it isn't applicable to you, just hide it.
+This is what a post looks like in this theme. There are callout boxes you can put at the top. This theme was inspired by a recipe site, but you can probably think of a way to incorporate these detail boxes into a variety of genres. If it isn't applicable to you, just hide it.
 
 This theme comes prepped with stylings for H2s (above) and H3s (below). Feel free to tweak these styles or add additional header styles based on your needs.
 
