@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-<div class="post__header">
-  <h2 class="post__title">{{ page.tag }}</h2>
+<div class="post__header category__header">
+  <h2 class="post__title category__title">{{ page.tag }}</h2>
 </div>
-<div class="category__body">
+<div class="post__body category__body">
   <div class="wrap">
     {% for post in site.categories[page.tag] %}
       <div class="result">
