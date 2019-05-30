@@ -24,7 +24,7 @@ html, body {
 
 body {
   font-size: 14px; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 425px) {
     body {
       font-size: 12px; } }
 
@@ -37,6 +37,9 @@ p {
 .post__header .post__title {
   font-size: 3.57em;
   font-family: Hind, sans-serif; }
+  @media only screen and (max-width: 425px) {
+    .post__header .post__title {
+      font-size: 2.14em; } }
 
 .post__header .description {
   font-family: Hind, sans-serif;
@@ -88,7 +91,8 @@ p {
     font-family: Crimson Text, serif;
     background: #efefef; }
   .post__body .wrap ul, .post__body .wrap ol {
-    margin-bottom: 1.14em; }
+    margin-bottom: 1.14em;
+    margin-left: 25px; }
     .post__body .wrap ul li, .post__body .wrap ol li {
       margin: .4em 0; }
       .post__body .wrap ul li li, .post__body .wrap ol li li {
@@ -482,7 +486,7 @@ p {
   .footer p {
     font-family: Hind, sans-serif;
     font-weight: 300;
-    font-size: 1em; }
+    font-size: 1.14em; }
   .footer a {
     color: inherit;
     text-decoration: none; }
@@ -619,7 +623,10 @@ p {
 .post__header {
   text-align: center;
   background: white;
-  padding: 50px 15px; }
+  padding: 100px 15px; }
+  @media only screen and (max-width: 425px) {
+    .post__header {
+      padding: 75px 15px; } }
   .post__header .post__title {
     max-width: 850px;
     margin: auto; }
