@@ -16,6 +16,8 @@
   width: inherit
   background-size: cover
   background-position: center
+  @media only screen and (max-width: 425px)
+    max-height: 425px
 .post__body, .category__body
   background: white
   .wrap
@@ -37,7 +39,19 @@
           padding-bottom: .3em
     a span
         margin-left: 15px
-
+.category__header
+  background: #0D1321
+  color: white
+  #down__arrow
+    height: 30px
+    width: 30px
+    background-color: #0D1321
+    position: relative
+    margin: auto
+    bottom: -115px
+    transform: rotate(45deg)
+    @media only screen and (max-width: 425px)
+      bottom: -90px
 .category__body .wrap
   .result
     a
