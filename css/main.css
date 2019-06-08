@@ -699,23 +699,25 @@ p {
 .category__body .wrap .result p.post__description {
   font-size: 1em; }
 
-#to__top {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  background: black;
-  background: rgba(0, 0, 0, 0.7);
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  text-align: center;
-  text-decoration: none; }
-  #to__top span {
-    font-size: 26px;
-    width: 100%;
-    color: white;
-    text-decoration: none;
-    position: relative;
-    top: 10px; }
-  #to__top span:nth-of-type(2) {
-    font-size: 18px; }
+#to__top__button__container {
+  display: none; }
+  #to__top__button__container #to__top__button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: black;
+    background: rgba(0, 0, 0, 0.7);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none; }
+    #to__top__button__container #to__top__button span {
+      font-size: 26px;
+      width: 100%;
+      color: white;
+      text-decoration: none;
+      position: relative;
+      top: 10px; }
+    #to__top__button__container #to__top__button span:nth-of-type(2) {
+      font-size: 18px; }
