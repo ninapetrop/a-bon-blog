@@ -338,6 +338,8 @@ p {
   max-width: 1200px;
   width: 100%;
   margin: 10px auto; }
+  .section h1.post__title:hover {
+    text-decoration: underline; }
 
 .row {
   background: white;
@@ -361,6 +363,9 @@ p {
   text-transform: uppercase;
   background: white;
   border: solid 1px #e7e7e7; }
+  .category-break a {
+    text-decoration: none;
+    color: black; }
 
 .feature.category-1 .post__thumbnail {
   width: 50%;
