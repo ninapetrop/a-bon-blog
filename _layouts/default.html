@@ -21,8 +21,14 @@
             <div class="nav toggle__btn">
                 <i class="fas fa-bars icon" aria-hidden="true"></i>
             </div>
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a href="/search.html"><i class="fas fa-search"></i></a>
+            <h1 class="title" id="nav__title"><a href="/">{{ site.name }}</a></h1>
+            <div class="search__container">
+                <i class="fas fa-search" id="search__button"></i>
+                <form action="/search.html" method="get" id="search__form">
+              		<input type="text" id="search_box" name="query" placeholder="Search for recipes ...">
+              		<input type="submit" value="search" style="display:none">
+              	</form>
+            </div>
           </div>
           <div class="overlay"></div>
           <div class="menu__container">

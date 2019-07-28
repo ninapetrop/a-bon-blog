@@ -8,9 +8,9 @@ title: Search
 <div class="post__body">
   <div class="wrap">
     <form action="/search.html" method="get">
+      <i class="fas fa-search"></i>
       <label for="search-box">Search</label>
-      <input type="text" id="search-box" name="query">
-      <input type="submit" value="search">
+      <input type="text" id="search-box" name="query" placeholder="Search for recipes ...">
     </form>
 
     <ul id="search-results"></ul>
@@ -21,8 +21,9 @@ title: Search
           "{{ post.url | slugify }}": {
             "title": "{{ post.title | xml_escape }}",
             "author": "{{ post.author | xml_escape }}",
-            "category": "{{ post.category | xml_escape }}",
-            "content": {{ post.content | strip_html | strip_newlines | jsonify }},
+            "categories": "{{ post.categories | xml_escape }}",
+            "description": {{ post.description | strip_html | strip_newlines | jsonify }},
+            "date": "{{ post.date | date_to_string }}",
             "url": "{{ post.url | xml_escape }}"
           }
           {% unless forloop.last %},{% endunless %}

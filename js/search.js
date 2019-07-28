@@ -7,8 +7,9 @@
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
-        appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
-        appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
+        appendString += ''
+        appendString += '<li class="result"><p class="meta">' + item.date + '</p><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
+        appendString += '<p>' + item.description+ '</p></li>';
       }
 
       searchResults.innerHTML = appendString;
@@ -39,10 +40,11 @@
     // a boost of 10 to indicate matches on this field are more important.
     var idx = lunr(function () {
       this.field('id');
-      this.field('title', { boost: 10 });
+      this.field('title', { boost: 15 });
       this.field('author');
-      this.field('category');
-      this.field('content');
+      this.field('categories', { boost: 5 });
+      this.field('description');
+      this.field('date');
     });
 
     for (var key in window.store) { // Add the data to lunr
@@ -50,8 +52,9 @@
         'id': key,
         'title': window.store[key].title,
         'author': window.store[key].author,
-        'category': window.store[key].category,
-        'content': window.store[key].content
+        'categories': window.store[key].categories,
+        'description': window.store[key].description,
+        'date': window.store[key].date
       });
 
       var results = idx.search(searchTerm); // Get lunr to perform a search
