@@ -25,27 +25,22 @@ This theme comes prepped with stylings for H2s (above) and H3s (below). Feel fre
 Here's a demo of typography stylings for this theme. There are stylings for `<h2>` and `<h3>`in addition to post titles. The first `<h2>` elements within a post will have a solid black border above it.
 
 * Unordered lists are supported
-* And they look like This
+* They look like This
   - Here's an indented item
 
-By default, the `post` layout includes a templated call out box for ingredients. If you don't plan on using ingredients, or don't have a use for a callout box, either revise the template, or create another post layout type.
+By default, the `post` layout includes a templated call out box for ingredients. If you don't plan on using ingredients, or don't have a use for a callout box, either revise the template, hide the element, or create another post layout type.
 
-1. An ordered list looks like this
-2. Feel free to list out
-3. Whatever your heart desires
+1. Ordered lists are supported
+2. They look like this
 
-All typography styles can be accessed within `/_sass/typography.sass`. You can update your font choice there too.
+All typography styles can be accessed within `/_sass/typography.sass`.
 
 ### How to Use and Dependencies (h3)
 
-In addition to Jekyll, you'll need to have Gulp and SASS installed. I used ShakeyShane's [jekyll-gulp-sass-browser-sync](https://github.com/shakyShane/jekyll-gulp-sass-browser-sync) project as a base for this theme during development.
+In addition to Jekyll, you'll need to have Gulp, BrowserSync and SASS installed. I used ShakeyShane's [jekyll-gulp-sass-browser-sync](https://github.com/shakyShane/jekyll-gulp-sass-browser-sync) project as a base for this theme during development.
+
+Also, this theme uses [lunr.js](https://lunrjs.com/) for the search function. Big thanks to them.
 
 You can fork or download this theme from my repo [here](https://github.com/ninapetrop/a-bon-blog).
 
-### Quick Customization (h3)
-
-You'll find this post in your directory - edit this post and re-build (or run with the switch) to see your changes!
-To add new posts, simply add a file in the directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
-
-You'll find this post in your directory - edit this post and re-build (or run with the switch) to see your changes!
-To add new posts, simply add a file in the directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+If you'd like, help me stay caffeinated and keep me going by [buying me a coffee](https://paypal.me/NinaPetropoulos?locale.x=en_US).

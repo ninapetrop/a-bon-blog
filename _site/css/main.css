@@ -24,7 +24,7 @@ html, body {
 
 body {
   font-size: 14px; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 425px) {
     body {
       font-size: 12px; } }
 
@@ -37,6 +37,9 @@ p {
 .post__header .post__title {
   font-size: 3.57em;
   font-family: Hind, sans-serif; }
+  @media only screen and (max-width: 425px) {
+    .post__header .post__title {
+      font-size: 2.14em; } }
 
 .post__header .description {
   font-family: Hind, sans-serif;
@@ -88,7 +91,8 @@ p {
     font-family: Crimson Text, serif;
     background: #efefef; }
   .post__body .wrap ul, .post__body .wrap ol {
-    margin-bottom: 1.14em; }
+    margin-bottom: 1.14em;
+    margin-left: 25px; }
     .post__body .wrap ul li, .post__body .wrap ol li {
       margin: .4em 0; }
       .post__body .wrap ul li li, .post__body .wrap ol li li {
@@ -327,13 +331,12 @@ p {
 .header .nav .icon {
   cursor: pointer; }
 
-.header .fa-search {
-  width: 50px; }
-
 .section {
   max-width: 1200px;
   width: 100%;
   margin: 10px auto; }
+  .section h1.post__title:hover {
+    text-decoration: underline; }
 
 .row {
   background: white;
@@ -357,6 +360,9 @@ p {
   text-transform: uppercase;
   background: white;
   border: solid 1px #e7e7e7; }
+  .category-break a {
+    text-decoration: none;
+    color: black; }
 
 .feature.category-1 .post__thumbnail {
   width: 50%;
@@ -365,7 +371,7 @@ p {
 .feature.category-1 .post__content {
   width: 50%;
   padding: 10px;
-  background: #FFC700;
+  background: white;
   text-align: center;
   display: -ms-flexbox;
   display: flex;
@@ -482,7 +488,7 @@ p {
   .footer p {
     font-family: Hind, sans-serif;
     font-weight: 300;
-    font-size: 1em; }
+    font-size: 1.14em; }
   .footer a {
     color: inherit;
     text-decoration: none; }
@@ -619,7 +625,10 @@ p {
 .post__header {
   text-align: center;
   background: white;
-  padding: 50px 15px; }
+  padding: 100px 15px; }
+  @media only screen and (max-width: 425px) {
+    .post__header {
+      padding: 75px 15px; } }
   .post__header .post__title {
     max-width: 850px;
     margin: auto; }
@@ -632,6 +641,9 @@ p {
   width: inherit;
   background-size: cover;
   background-position: center; }
+  @media only screen and (max-width: 425px) {
+    .post__image {
+      max-height: 425px; } }
 
 .post__body, .category__body {
   background: white; }
@@ -655,20 +667,112 @@ p {
     .post__body .wrap a span, .category__body .wrap a span {
       margin-left: 15px; }
 
-.category__body .wrap .result a {
+.category__header {
+  background: #0D1321;
+  color: white; }
+  .category__header #down__arrow {
+    height: 30px;
+    width: 30px;
+    background-color: #0D1321;
+    position: relative;
+    margin: auto;
+    bottom: -115px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+    @media only screen and (max-width: 425px) {
+      .category__header #down__arrow {
+        bottom: -90px; } }
+
+.category__body .wrap .result a, #search-results .result a {
   text-decoration: none; }
-  .category__body .wrap .result a:hover {
+  .category__body .wrap .result a:hover, #search-results .result a:hover {
     text-decoration: underline; }
 
-.category__body .wrap .result h3 {
+.category__body .wrap .result h3, #search-results .result h3 {
   margin: 0;
   padding: 0;
   text-transform: none; }
 
-.category__body .wrap .result p.meta {
+.category__body .wrap .result p.meta, #search-results .result p.meta {
   font-size: .8em;
   margin: 0;
   font-family: Hind, sans-serif; }
 
-.category__body .wrap .result p.post__description {
+.category__body .wrap .result p.post__description, #search-results .result p.post__description {
   font-size: 1em; }
+
+#to__top__button__container {
+  display: none; }
+  #to__top__button__container #to__top__button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: black;
+    background: rgba(0, 0, 0, 0.7);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none; }
+    #to__top__button__container #to__top__button span {
+      font-size: 26px;
+      width: 100%;
+      color: white;
+      text-decoration: none;
+      position: relative;
+      top: 10px; }
+    #to__top__button__container #to__top__button span:nth-of-type(2) {
+      font-size: 18px; }
+
+.header .search__container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+  width: 50px;
+  transition: width 0.3s; }
+  .header .search__container.open {
+    width: 350px; }
+
+.header #search__form {
+  height: 100%;
+  width: 100%;
+  display: none; }
+  .header #search__form input {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    color: white;
+    padding: 5px 15px;
+    box-sizing: border-box; }
+
+.main form {
+  border: none;
+  padding: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  border: solid 2px black;
+  margin-bottom: 50px; }
+  .main form label {
+    display: none; }
+  .main form input#search-box {
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-size: 1.12em;
+    margin-left: 15px;
+    -ms-flex-positive: 1;
+        flex-grow: 1; }
+
+.main #search-results {
+  list-style: none; }
