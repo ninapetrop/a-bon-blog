@@ -7,11 +7,11 @@ title: A Bon Blog
 <div class="section">
   <div class="row feature category-1">
       {% for post in site.posts limit:1 %}
-      <a href="{{ post.url }}" class="post__thumbnail">
+      <a href="{{ post.url | prepend: site.baseurl }}" class="post__thumbnail">
         <div class="thumbnail" style='background-image: url({{ site.url }}/images/{{ post.thumbnail }})'></div>
       </a>
       <div class="post__content">
-        <a href="{{ post.url }}">
+        <a href="{{ post.url | prepend: site.baseurl }}">
           <h1 class="post__title">{{ post.title }}</h1>
           <p class="post__description">{{ post.description }}</p>
         </a>
