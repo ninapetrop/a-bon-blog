@@ -1,81 +1,119 @@
-.content-wrap
-  padding: 50px 0
-  max-width: 1200px
-  margin: auto
-  display: flex
-  flex-direction: column
 .section
+  max-width: 1200px
   width: 100%
-  margin: 10px 0
+  margin: 10px auto
+  h1.post__title:hover
+    text-decoration: underline
 .row
-  background: #efefef
+  background: white
   margin: 15px 0
   display: flex
   flex-wrap: wrap
-
+.category-break
+  width: 180px
+  margin: auto
+  position: relative
+  top: 30px
+  text-align: center
+  padding: 5px
+  border-radius: 1px
+  font-family: $font-hind
+  font-size: 1em
+  font-weight: 500
+  text-transform: uppercase
+  background: white
+  border: solid 1px #e7e7e7
+  a
+    text-decoration: none
+    color: black
 .feature.category-1 .post__thumbnail
   width: 50%
   height: inherit
-
 .feature.category-1 .post__content
   width: 50%
-  background: #ffd400
+  padding: 10px
+  background: white
   text-align: center
   display: flex
   flex-direction: column
   justify-content: center
 .feature.category-1 .post__thumbnail
-  background: blue
   flex-grow: 1
-
 .feature.category-1 .post__thumbnail .thumbnail
   height: inherit
   background-size: cover
   background-position: center center
-
 .feature.category-1 .post__content a
   color: black
   text-decoration: none
-
 .feature.category-1 .post__content .post__description
-  font-size: 1.2rem
+  font-size: 1.24em
+  line-height: 1.53
   font-family: $font-hind
   font-weight: 600
   max-width: 400px
   margin: auto
-
+  padding-top: 10px
 .feature.category-1 .post__content .post__title
-  font-size: 3.5rem
-  line-height: 4.2rem
-
-.recent.category-1
+  font-size: 3.57em
+  line-height: 1.04
+.recent
   background: none
   display: flex
   justify-content: space-between
   flex-wrap: wrap
   .third
-    max-width: 380px
     width: 100%
-    background: #efefef
-    padding: 10px
-
+    background: white
+    .post__content
+      height: 30%
+      padding: 10px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-content: center
+      text-align: center
+      a
+        text-decoration: none
+      .post__title
+        font-size: 1.32em
+        font-weight: 600
+        color: black
+.recent.category-1
+  .third:nth-of-type(1), .third:nth-of-type(3)
+    background: #0D1321
+    .post__title
+      color: white
+.third .post__thumbnail .thumbnail
+  height: 70%
+  background-size: cover
+  background-position: center center
 @media only screen and (min-width: 1024px)
   .row
     height: 600px
+  .third
+    max-width: 32%
+
 @media only screen and (max-width: 1023px)
-  .feature.category-1
   .feature.category-1 .post__thumbnail, .post__content
     width: 100%
   .feature.category-1 .post__content
     min-height: 150px
     flex-grow: 1
-  .feature.category-1 .post__content a
   .feature.category-1 .post__thumbnail
     flex-grow: 1
     height: 60vh
   .feature.category-1 .post__content .post__title
-    font-size: 1.5rem
-    line-height: 2rem
+    font-size: 1.32em
+    line-height: 2em
   .feature.category-1 .post__content .post__description
-    font-size: 1rem
-    line-height: 1.5rem
+    display: none
+  .third
+    width: 100%
+    height: 500px
+    .post__thumbnail
+      flex-grow: 1
+      height: 50vh
+    .post__content
+      min-height: 150px
+      flex-grow: 1

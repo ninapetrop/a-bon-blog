@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  Quick Start Guide
+title:  Viral poke mlkshk, green juice vegan XOXO banjo vinyl meh
 date:   2019-01-20 09:11:03
-description: Learn more about this blog. Review typography, get the links, and get going!
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 thumbnail: avocado-toast.jpg
-categories: category2
+categories: category1
 list: <% _.forEach(ingredients, function(name) { %><li><%= name %></li><% }); %>
 ingredients:
   - 2 Tbsp. extra-virgin olive oil

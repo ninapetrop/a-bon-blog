@@ -1,9 +1,8 @@
 .header
-  background: black
+  background: #0D1321
   color: white
-  height: 50px
+  height: 60px
   width: 100%
-  padding: 10px
   box-sizing: border-box
   display: flex
   justify-content: space-between
@@ -15,13 +14,18 @@
   color: white
   text-decoration: none
   font-weight: 300
+  font-size: 20px
+  cursor: pointer
 
 .header .nav
-  height: inherit
+  height: 100%
   width: 50px
+  display: flex
+  justify-content: center
+  align-items: center
+  &:hover
+    cursor: pointer
+    background: rgba(255,255,255,0.1)
 
 .header .nav .icon
-  background: white
-  margin: 5px auto
-  width: 45px;
-  height: 40px;
+  cursor: pointer

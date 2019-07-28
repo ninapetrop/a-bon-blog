@@ -1,0 +1,93 @@
+.post__header
+  text-align: center
+  background: white
+  padding: 100px 15px
+  @media only screen and (max-width: 425px)
+    padding: 75px 15px
+  .post__title
+    max-width: 850px
+    margin: auto
+  .description
+    max-width: 450px
+    margin: 20px auto
+
+.post__image
+  height: 100vh
+  width: inherit
+  background-size: cover
+  background-position: center
+  @media only screen and (max-width: 425px)
+    max-height: 425px
+.post__body, .category__body
+  background: white
+  .wrap
+    padding: 25px 15px
+    max-width: 710px
+    margin: auto
+    .ingredients__container
+      background: #f5f5f5
+      padding: 20px 50px
+      margin: 2.14rem 0
+      .list__title
+        max-width: 420px
+        margin: 0 auto 1em auto
+      ul
+        list-style: none
+        max-width: 420px
+        margin: auto
+        li
+          padding-bottom: .3em
+    a span
+        margin-left: 15px
+.category__header
+  background: #0D1321
+  color: white
+  #down__arrow
+    height: 30px
+    width: 30px
+    background-color: #0D1321
+    position: relative
+    margin: auto
+    bottom: -115px
+    transform: rotate(45deg)
+    @media only screen and (max-width: 425px)
+      bottom: -90px
+.category__body .wrap, #search-results
+  .result
+    a
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+    h3
+      margin: 0
+      padding: 0
+      text-transform: none
+    p.meta
+      font-size: .8em
+      margin: 0
+      font-family: $font-hind
+    p.post__description
+      font-size: 1em
+
+#to__top__button__container
+  display: none
+  #to__top__button
+    position: fixed
+    bottom: 50px
+    right: 50px
+    background: rgb(0, 0, 0)
+    background: rgba(0, 0, 0, 0.7)
+    height: 50px
+    width: 50px
+    border-radius: 50%
+    text-align: center
+    text-decoration: none
+    span
+      font-size: 26px
+      width: 100%
+      color: white
+      text-decoration: none
+      position: relative
+      top: 10px
+    span:nth-of-type(2)
+      font-size: 18px

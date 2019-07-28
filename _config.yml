@@ -2,3 +2,19 @@ name: A Bon Blog
 markdown: redcarpet
 highlighter: rouge
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+instagram: http://example.net
+twitter: http://example.net
+facebook: http://example.net
+youtube: http://example.net
+
+collections:
+  category:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"

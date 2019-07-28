@@ -5,34 +5,64 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>A Bon Blog</title>
         <meta name="viewport" content="width=device-width">
-
+        <link rel='icon' href='/favicon.png' type='image/x-icon'/ >
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
-
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
     </head>
     <body>
 
         <div class="site">
           <div class="header">
-            <div class="nav">
-                <div class="icon"></div>
+            <div class="nav toggle__btn">
+                <i class="fas fa-bars icon" aria-hidden="true"></i>
             </div>
-            <h1 class="title"><a href="/">A Bon Blog</a></h1>
-            <a class="extra" href="/">home</a>
+            <h1 class="title" id="nav__title"><a href="/">A Bon Blog</a></h1>
+            <div class="search__container">
+                <i class="fas fa-search" id="search__button"></i>
+                <form action="/search.html" method="get" id="search__form">
+              		<input type="text" id="search_box" name="query" placeholder="Search for recipes ...">
+              		<input type="submit" value="search" style="display:none">
+              	</form>
+            </div>
           </div>
-          <div class="content-wrap">
-
-          <!-- First Story, Primary Category -->
+          <div class="overlay"></div>
+          <div class="menu__container">
+            <i class="fas fa-times toggle__btn" id="close__button" aria-hidden="true"></i>
+            <div class="menu__header"><a href="/">A Bon Blog</a></div>
+            <div class="menu__header">Second Header</div>
+            <ul>
+              <li><a href="/category/category1.html">Category 1</a></li>
+              <li><a href="/category/category2.html">Category 2</a></li>
+              <li><a href="/category/category1.html">Category 1</a></li>
+              <li><a href="/category/category2.html">Category 2</a></li>
+              <li><a href="/about.html">About</a></li>
+            </ul>
+            <div class="menu__footer">
+              <div class="social__wrap">
+                <a href="http://example.net"><i class="fab fa-instagram"></i></a>
+                <a href="http://example.net"><i class="fab fa-twitter"></i></a>
+                <a href="http://example.net"><i class="fab fa-facebook-f"></i></a>
+                <a href="http://example.net"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="main">
+            <!-- First Story, Primary Category -->
 <div class="section">
   <div class="row feature category-1">
       
-      <a href="#" class="post__thumbnail">
+      <a href="/category2/2019/01/20/food-food.html" class="post__thumbnail">
         <div class="thumbnail" style='background-image: url(/images/avocado-toast.jpg)'></div>
       </a>
       <div class="post__content">
-        <a href="/jekyll/update/2019/01/20/food-food.html">
-          <h1 class="post__title">Pantie dropping, bone popping, honey dijon chicken.</h1>
-          <p class="post__description">Grow a pair in 2019 and start eating GMO chicken. Cheaper than your co-pay for antibiotics, healthier than your $5 McNugget..</p>
+        <a href="/category2/2019/01/20/food-food.html">
+          <h1 class="post__title">Quick Start Guide</h1>
+          <p class="post__description">Learn more about this blog. Review typography, get the links, and get going!</p>
         </a>
       </div>
       
@@ -43,66 +73,101 @@ Next Three Stories, Primary Category
 Return and include " offset:1 "
 -->
 <div class="section">
+  <div class="category-break category__1"><a href="/category/category1.html">Category 1</a></div>
   <div class="row recent category-1">
     
     <div class="third">
-      <a href="#" class="post__thumbnail">
-        <div class="thumbnail" style='background-image: url(/images/avocado-toast.jpg)'></div>
+      <a href="/category1/2019/01/20/final-article.html" class="post__thumbnail">
+        <div class="thumbnail" style='background-image: url(/images/dessert-donuts-doughnuts-273773.jpg)'></div>
       </a>
       <div class="post__content">
-        <a href="/jekyll/update/2019/01/20/final-article.html">
-          <h1 class="post__title">Final Article</h1>
-          <p class="post__description">wors words words.</p>
+        <a href="/category1/2019/01/20/final-article.html">
+          <h1 class="post__title">Neutra kitsch cray, pop-up godard tilde meditation truffaut iPhone plaid chartreuse</h1>
         </a>
       </div>
     </div>
     
     <div class="third">
-      <a href="#" class="post__thumbnail">
+      <a href="/category1/2019/01/20/example-post-1.html" class="post__thumbnail">
         <div class="thumbnail" style='background-image: url(/images/avocado-toast.jpg)'></div>
       </a>
       <div class="post__content">
-        <a href="/jekyll/update/2019/01/20/another-article.html">
-          <h1 class="post__title">Another Article</h1>
-          <p class="post__description">wors words words.</p>
+        <a href="/category1/2019/01/20/example-post-1.html">
+          <h1 class="post__title">Viral poke mlkshk, green juice vegan XOXO banjo vinyl meh</h1>
         </a>
       </div>
     </div>
     
     <div class="third">
-      <a href="#" class="post__thumbnail">
-        <div class="thumbnail" style='background-image: url(/images/avocado-toast.jpg)'></div>
+      <a href="/category1/2014/04/20/welcome-to-jekyll.html" class="post__thumbnail">
+        <div class="thumbnail" style='background-image: url(/images/beef-bread-burger-156114.jpg)'></div>
       </a>
       <div class="post__content">
-        <a href="/jekyll/update/2014/04/20/welcome-to-jekyll.html">
-          <h1 class="post__title">Welcome to Jekyll!</h1>
-          <p class="post__description">wors words words.</p>
+        <a href="/category1/2014/04/20/welcome-to-jekyll.html">
+          <h1 class="post__title">Lo-fi banjo aesthetic selfies retro lomo sustainable 90's tofu</h1>
         </a>
       </div>
     </div>
     
   </div>
 </div>
-<!-- First Story, Secondary Category -->
-
+<!-- Three Stories, Secondary Category -->
+<div class="section">
+  <div class="category-break category__2"><a href="/category/category2.html">Category 2</a></div>
+  <div class="row recent category-2">
+    
+    <div class="third">
+      <a href="/category2/2019/01/20/food-food.html" class="post__thumbnail">
+        <div class="thumbnail" style='background-image: url(/images/avocado-toast.jpg)'></div>
+      </a>
+      <div class="post__content">
+        <a href="/category2/2019/01/20/food-food.html">
+          <h1 class="post__title">Quick Start Guide</h1>
+        </a>
+      </div>
+    </div>
+    
+    <div class="third">
+      <a href="/category2/2019/01/20/another-article.html" class="post__thumbnail">
+        <div class="thumbnail" style='background-image: url(/images/alcoholic-beverage-beverage-citrus-1232152.jpg)'></div>
+      </a>
+      <div class="post__content">
+        <a href="/category2/2019/01/20/another-article.html">
+          <h1 class="post__title">Williamsburg gastropub cliche, thundercats gluten-free la croix ramps viral mixtape</h1>
+        </a>
+      </div>
+    </div>
+    
+    <div class="third">
+      <a href="/category2/2019/01/20/example-post-2.html" class="post__thumbnail">
+        <div class="thumbnail" style='background-image: url(/images/avocado-toast.jpg)'></div>
+      </a>
+      <div class="post__content">
+        <a href="/category2/2019/01/20/example-post-2.html">
+          <h1 class="post__title">Echo park drinking vinegar letterpress locavore waistcoat kale chips</h1>
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</div>
 
           </div>
           <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name is<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
+            <div class="section">
+              <div class="contact">
+                <p class="site__name"> A Bon Blog</p>
+                <div class="social__wrap">
+                  <a href="http://example.net"><i class="fab fa-instagram"></i></a>
+                  <a href="http://example.net"><i class="fab fa-twitter"></i></a>
+                  <a href="http://example.net"><i class="fab fa-facebook-f"></i></a>
+                  <a href="http://example.net"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+                <p class="site__description">Check out my other free Jekyll themes on <a href="https://github.com/ninapetrop">GitHub</a>.<br />If you'd like, help me stay caffeinated and keep going by <a href="https://paypal.me/NinaPetropoulos?locale.x=en_US">buying me a coffee</a>.</p>
             </div>
           </div>
         </div>
-
+        <script src="/js/main.js"></script>
     </body>
 </html>

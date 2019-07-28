@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  Quick Start Guide
+title:  Echo park drinking vinegar letterpress locavore waistcoat kale chips
 date:   2019-01-20 09:11:03
-description: Learn more about this blog. Review typography, get the links, and get going!
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 thumbnail: avocado-toast.jpg
 categories: category2
 list: <% _.forEach(ingredients, function(name) { %><li><%= name %></li><% }); %>
