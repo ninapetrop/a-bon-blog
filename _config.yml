@@ -1,6 +1,8 @@
 name: A Bon Blog
+#GitHub Project Pages Settings
+url: "http://ninapetrop.github.io/a-bon-blog"
 baseurl: "/a-bon-blog"
-url: ""
+url-pretty: "ninapetrop.github.io/a-bon-blog"
 markdown: kramdown
 highlighter: rouge
 exclude: ["node_modules", "gulpfile.js", "package.json"]
