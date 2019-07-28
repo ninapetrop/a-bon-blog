@@ -1,7 +1,10 @@
-// Menu Function Variables
+// Function Variables
 var open = $(".toggle__btn");
-var menu = $(".menu__container")
+var menu = $(".menu__container");
 var overlay = $(".overlay");
+var search = $("#search__button");
+var searchForm = $("#search__form");
+var main = $(".main");
 
 // Menu Open Function
 open.click(function() {
@@ -37,4 +40,21 @@ $(function () {
       scrollTop:  $('.post__body').offset().top
     }, 0);
   });
+});
+
+// Search Form Functions
+search.click(function () {
+  $('#nav__title').toggle();
+  $('.search__container').toggleClass("open");
+  searchForm.toggle();
+  $('#search_box').focus();
+});
+
+main.click(function () {
+  if( $('.search__container').hasClass("open")) {
+    $('#nav__title').toggle();
+    $('.search__container').toggleClass("open");
+    searchForm.toggle();
+    $('#search_box').focus();
+  }
 });
