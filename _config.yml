@@ -1,4 +1,6 @@
 name: A Bon Blog
+baseurl: "/a-bon-blog"
+url: ""
 markdown: kramdown
 highlighter: rouge
 exclude: ["node_modules", "gulpfile.js", "package.json"]
