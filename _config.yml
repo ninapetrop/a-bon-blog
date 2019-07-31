@@ -1,5 +1,7 @@
 name: A Bon Blog
-markdown: redcarpet
+baseurl: ""
+url: ""
+markdown: kramdown
 highlighter: rouge
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 instagram: http://example.net
