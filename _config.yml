@@ -1,5 +1,5 @@
 name: A Bon Blog
-baseurl: "/a-bon-blog"
+baseurl: ""
 url: ""
 markdown: kramdown
 highlighter: rouge
